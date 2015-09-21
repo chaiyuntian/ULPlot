@@ -152,6 +152,11 @@ public:
 		void SetBrushFromMaterial(UMaterialInterface* Material);
 
 	/**  */
+	UFUNCTION(BlueprintCallable, Category = "Plot")
+		void SetDataPoints(TArray<FVector2D> InDataPoint,FLinearColor LineColor,int32 Index);
+
+
+	/**  */
 	UFUNCTION(BlueprintCallable, Category = "Appearance")
 		UMaterialInstanceDynamic* GetDynamicMaterial();
 

@@ -135,6 +135,28 @@ void UPlot::SetBrushFromMaterial(UMaterialInterface* Material)
 	}
 }
 
+void UPlot::SetDataPoints(TArray<FVector2D> InDataPoint, FLinearColor LineColor, int32 Index){
+	switch (Index)
+	{
+	case 1:
+		Points1 = InDataPoint;
+		LineColor1 = LineColor;
+		MyImage->SetPlotPoints(InDataPoint, LineColor, Index);
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	case 5:
+		break;
+	default:
+		break;
+	}
+
+}
+
 UMaterialInstanceDynamic* UPlot::GetDynamicMaterial()
 {
 	UMaterialInterface* Material = NULL;
