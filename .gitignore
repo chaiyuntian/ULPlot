@@ -35,5 +35,6 @@ Binaries/
 Debug/
 Release/
 obj/
+Intermediate/
 
 
